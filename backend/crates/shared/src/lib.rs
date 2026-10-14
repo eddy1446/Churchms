@@ -18,4 +18,4 @@ pub struct Church {
 pub struct Health {
     pub status: String,
     pub version: String,
-  }
+}
