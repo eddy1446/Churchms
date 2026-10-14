@@ -1,6 +1,6 @@
 {
   "name": "ChurchMS Dev",
-  "image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
+  "image": "mcr.microsoft.com/devcontainers/rust:1-85-bookworm",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/java:1": {
