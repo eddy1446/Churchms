@@ -70,4 +70,4 @@ impl Config {
     pub fn is_dev(&self) -> bool {
         self.app_env == "development"
     }
-  }
+}
