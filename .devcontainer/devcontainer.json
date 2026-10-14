@@ -1,0 +1,31 @@
+{
+  "name": "ChurchMS Dev",
+  "image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17",
+      "installGradle": false
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "serayuzgur.crates",
+        "vadimcn.vscode-lldb",
+        "ms-azuretools.vscode-docker",
+        "fwcd.kotlin"
+      ]
+    }
+  },
+  "postCreateCommand": "cargo install sqlx-cli --no-default-features --features postgres,rustls && rustup component add rustfmt clippy",
+  "remoteUser": "vscode",
+  "forwardPorts": [5432, 5050, 8080],
+  "portsAttributes": {
+    "5432": { "label": "Postgres" },
+    "5050": { "label": "pgAdmin" },
+    "8080": { "label": "API" }
+  }
+}
