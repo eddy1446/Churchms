@@ -1,0 +1,39 @@
+# Rust
+/backend/target/
+**/*.rs.bk
+
+# Environment
+.env
+.env.local
+*.env
+!.env.example
+
+# Android / Gradle
+/android/.gradle/
+/android/build/
+/android/app/build/
+/android/local.properties
+/android/.idea/
+/android/captures/
+*.apk
+*.aab
+*.keystore
+!debug.keystore
+
+# IDE
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Docker
+/infra/data/
+
+# Secrets
+*.pem
+*.key
+secrets/
