@@ -37,5 +37,5 @@ async fn health() -> Json<Health> {
     Json(Health {
         status: "ok".into(),
         version: env!("CARGO_PKG_VERSION").into(),
-    })
-        }
+        })
+}
